@@ -8,7 +8,7 @@ namespace App\Console\Commands;
 
 use App\Services\CrawlerWorker\Interfaces\CrawlerWorker;
 
-class CrawlerFactory
+class CrawlerWorkerFactory
 {
     /**
      * @param string $crawlerType

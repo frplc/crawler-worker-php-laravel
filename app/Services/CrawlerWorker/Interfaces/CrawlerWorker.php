@@ -5,6 +5,7 @@
  */
 namespace App\Services\CrawlerWorker\Interfaces;
 
+use App\Interfaces\TaskDto;
 use Illuminate\Log\Logger;
 
 interface CrawlerWorker

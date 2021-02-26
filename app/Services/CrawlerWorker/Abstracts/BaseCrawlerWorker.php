@@ -7,7 +7,7 @@ declare(strict_types=1);
 namespace App\Services\CrawlerWorker\Abstracts;
 
 use App\Services\CrawlerWorker\Interfaces\CrawlerWorker;
-use App\Services\CrawlerWorker\Interfaces\TaskDto;
+use App\Interfaces\TaskDto;
 use Illuminate\Log\Logger;
 
 abstract class BaseCrawlerWorker implements CrawlerWorker

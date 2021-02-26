@@ -4,9 +4,9 @@ declare(strict_types=1);
  * Date: 12.02.21
  * Time: 23:46
  */
-namespace App\Services\CrawlerWorker\Inventory;
+namespace App\Inventory;
 
-use \App\Services\CrawlerWorker\Interfaces\TaskDto as ITaskDto;
+use App\Interfaces\TaskDto as ITaskDto;
 
 class TaskDto implements ITaskDto
 {

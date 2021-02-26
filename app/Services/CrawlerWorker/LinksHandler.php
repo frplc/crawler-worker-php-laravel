@@ -8,12 +8,11 @@ namespace App\Services\CrawlerWorker;
 
 use App\Services\CrawlerWorker\Abstracts\BaseResponseHandler;
 use App\Services\CrawlerWorker\Interfaces\CrawlerWorker;
-use App\Services\CrawlerWorker\Interfaces\ResponseHandler;
 
-class LinksDigger extends BaseResponseHandler implements ResponseHandler
+class LinksHandler extends BaseResponseHandler
 {
     /**
-     * LinksDigger constructor.
+     * LinksHandler constructor.
      * @param CrawlerWorker $crawler
      */
     public function __construct(CrawlerWorker $crawler)

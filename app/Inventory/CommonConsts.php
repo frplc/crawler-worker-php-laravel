@@ -6,9 +6,7 @@ declare(strict_types=1);
  */
 namespace App\Inventory;
 
-use Faker\Provider\DateTime;
-
-class CrawlerWorkerConsts
+class CommonConsts
 {
     const STORAGE_DIR_PATH = "crawler";
 }

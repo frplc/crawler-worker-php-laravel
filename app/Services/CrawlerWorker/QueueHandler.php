@@ -6,8 +6,8 @@ declare(strict_types=1);
  */
 namespace App\Services\CrawlerWorker;
 
-use App\Services\CrawlerWorker\Interfaces\TaskDto;
-use App\Inventory\CrawlerWorkerConsts;
+use App\Interfaces\TaskDto;
+use App\Inventory\CommonConsts;
 
 class QueueHandler
 {
@@ -58,7 +58,7 @@ class QueueHandler
     protected function convertMessageToTaskDto(string $message): TaskDto
     {
         //Stub data
-        $taskDto = new \App\Services\CrawlerWorker\Inventory\TaskDto();
+        $taskDto = new \App\Inventory\TaskDto();
 
         $taskDto->setCrawlerType("PLAIN_DOWNLOADER");
         $taskDto->setConcurrencyValue(10);
@@ -92,7 +92,7 @@ class QueueHandler
         ]);
 
         $taskDto->setResponseHandlerType("FILES_HANDLER");
-        $taskDto->setFileSavingPath(CrawlerWorkerConsts::STORAGE_DIR_PATH
+        $taskDto->setFileSavingPath(CommonConsts::STORAGE_DIR_PATH
             ."_".(new \DateTime())->format("Y_m_d"));
 
         return $taskDto;

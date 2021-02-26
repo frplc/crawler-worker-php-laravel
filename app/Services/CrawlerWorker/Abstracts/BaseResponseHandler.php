@@ -8,8 +8,9 @@ namespace App\Services\CrawlerWorker\Abstracts;
 
 use App\Services\CrawlerWorker\Interfaces\CrawlerDto;
 use App\Services\CrawlerWorker\Interfaces\CrawlerWorker;
+use App\Services\CrawlerWorker\Interfaces\ResponseHandler;
 
-abstract class BaseResponseHandler
+abstract class BaseResponseHandler implements ResponseHandler
 {
     /**
      * @var CrawlerWorker
@@ -20,6 +21,11 @@ abstract class BaseResponseHandler
      * @var CrawlerDto
      */
     protected CrawlerDto $crawlerDto;
+
+    /**
+     * {@var ElementsProcessor}
+     */
+    protected $elementsProcessor;
 
     /**
      * BaseResponseHandler constructor.
