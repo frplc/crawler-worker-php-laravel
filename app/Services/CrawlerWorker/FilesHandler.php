@@ -8,6 +8,7 @@ namespace App\Services\CrawlerWorker;
 
 use App\Services\CrawlerWorker\Abstracts\BaseResponseHandler;
 use App\Services\CrawlerWorker\Interfaces\CrawlerWorker;
+
 use Illuminate\Support\Facades\Storage;
 
 class FilesHandler extends BaseResponseHandler
