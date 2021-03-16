@@ -1,6 +1,6 @@
-# Crawler worker on PHP
+# Crawler worker in PHP
  
-Skeleton of worker as part of distributed crawling system as Laravel service
+Crawler worker as part of distributed crawling system as Laravel service
 
 ### Launch 
 
